@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upcoming Events | College Events</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="top-bar">
+      <img src="assets/JBREC LOGO.jpg" alt="College Logo Left" class="logo" />
+      <div class="college-info">
+        <h1>Joginpally B.R. Engineering College</h1>
+        <p>Accredited by NAAC with A+, Recognized under 2(f) of UGC Act.1956, ISO 9001:2015 Certified,</p>
+        <p>Yenkapally (V), Moinabad (M), P.O. Himayat Nagar, R.R. District, Hyderabad – 500 075.</p>
+      </div>
+      <img src="assets/JBR LOGO.jpg" alt="College Logo Right" class="logo" />
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="index.html">About Us</a>
+      <div class="dropdown">
+        <a href="#">SAC ▾</a>
+        <div class="dropdown-content">
+          <a href="sac.html">About SAC</a>
+          <a href="team.html">SAC Team</a>
+        </div>
+      </div>
+      <a href="Gallery">Gallery</a>
+      <div class="dropdown">
+        <a href="#">Events ▾</a>
+        <div class="dropdown-content">
+          <a href="ongoing-events.html">Ongoing</a>
+          <a href="upcoming-events.html">Upcoming</a>
+          <a href="completed-events.html">Completed</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- HERO IMAGE SECTION -->
+  <div class="hero-section">
+    <div class="overlay">
+      <h2>Events / <span style="color: rgb(255, 255, 255);">Upcoming_Events</span></h2>
+    </div>
+  </div>
+
+  <!-- Toggle Button -->
+  <div class="max-w-5xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-md flex items-center justify-between space-x-4">
+    <img src="assets/Aakriti logo bg (1).png" alt="Logo 1" class="h-20 w-20 object-contain">
+    <div class="text-center flex-1">
+      <h2 class="text-2xl font-bold">TECHXPLORE & AAKRITI 2K25</h2>
+      <button onclick="toggleEventSections()" class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow">
+        Get More Details ▼
+      </button>
+    </div>
+    <img src="assets/TechXplore Logo.jpg" alt="Logo 2" class="h-20 w-20 object-contain">
+  </div>
+
+  <!-- Event Sections -->
+  <div id="event-sections" class="hidden transition-all duration-500 ease-in-out mt-6 px-8">
+
+    <!-- Technical Events -->
+    <section class="p-6">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-600">Technical Events (02.05.2025)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- tricky circuits -->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-blue-50 transition duration-300">
+          <img src="assets/Tricky circuits.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Tricky Circuits</h3>
+              <p class="text-sm text-gray-600">Test your circuit logic and design skills in this electrifying challenge! 
+                Decode circuit puzzles, troubleshoot faults, and race against time. Are your fundamentals strong enough?</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: <span id="reg-count">102</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project expo -->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-blue-50 transition duration-300">
+          <img src="assets/Project Expo.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Project Expo</h3>
+              <p class="text-sm text-gray-600">Showcase your innovation! Present your academic or hobby-based tech projects to a panel of experts and a curious crowd. Let your work speak volumes.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: <span id="reg-count">102</span></p>
+            </div>
+          </div>
+        </div>        
+
+        <!-- see it- name it-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-blue-50 transition duration-300">
+          <img src="assets/See it-Name it.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">See It - Name It</h3>
+              <p class="text-sm text-gray-600">Think you're a brand expert? Spot logos from tech giants, apps, and gadgets and prove your visual memory is on point!</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: <span id="reg-count">102</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bug bounty-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-blue-50 transition duration-300">
+          <img src="assets/Bug bash.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Bug Bounty</h3>
+              <p class="text-sm text-gray-600">Find it, fix it, and flaunt it! Debug programs and show off your logical thinking. Only the sharpest coders survive this arena.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: <span id="reg-count">102</span></p>
+            </div>
+          </div>
+        </div> 
+        
+        <!-- AI Chatbot-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-blue-50 transition duration-300">
+          <img src="assets/AI Chatbot.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Build a Bot</h3>
+              <p class="text-sm text-gray-600">Put your AI skills to the test. Build an intelligent chatbot that can carry a conversation, solve a problem, or entertain users. Creativity + Functionality = Winning formula!</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: <span id="reg-count">102</span></p>
+            </div>
+          </div>
+        </div>
+        
+        <!--Mech quiz-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-blue-50 transition duration-300">
+          <img src="assets/Quiz.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Mech Quiz</h3>
+              <p class="text-sm text-gray-600">A true test for the gearheads! Challenge your knowledge in mechanics, thermodynamics, machines, and more. Solo or in a team – bring your A-game!</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: <span id="reg-count">102</span></p>
+            </div>
+          </div>
+        </div>        
+        
+        <!-- Paper PresentATION -->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-blue-50 transition duration-300">
+          <img src="assets/paper presentation.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Paper Presentation</h3>
+              <p class="text-sm text-gray-600">Express your research and insights on trending technologies. Present with clarity, confidence, and creativity to impress the jury and peers alike.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 75</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Non-Technical Events -->
+    <section class="p-6">
+      <h2 class="text-2xl font-semibold mb-4 text-green-600">Non-Technical Events (02.05.2025)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Poster Presentation-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-green-50 transition duration-300">
+          <img src="assets/Poster Presentation.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Poster Presentation</h3>
+              <p class="text-sm text-gray-600">Art meets intellect. Express powerful messages, ideas, or awareness campaigns through impactful poster designs. It's your canvas – make it speak.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 48</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Short Film-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-green-50 transition duration-300">
+          <img src="assets/Short Film.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Short Film Competition</h3>
+              <p class="text-sm text-gray-600">Lights, camera, action! Show your storytelling skills in short film format. Fiction, documentary, or experimental – your vision, your rules.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 48</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Tug of War-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-green-50 transition duration-300">
+          <img src="assets/Tug of war.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Tug of War</h3>
+              <p class="text-sm text-gray-600">Strength, strategy, and teamwork – the classic battle of brawn is here! Gather your squad and pull your way to victory.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 48</p>
+            </div>
+          </div>
+        </div>
+        
+        <!--Treasure Hunt-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-green-50 transition duration-300">
+          <img src="assets/Treasure Hunt.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Treasure Hunt</h3>
+              <p class="text-sm text-gray-600">Decode clues, solve riddles, and race across campus in search of hidden treasures. Fun, fast-paced, and full of surprises!
+              </p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 48</p>
+            </div>
+          </div>
+        </div>        
+
+      </div>
+    </section>
+
+    <!-- Cultural Events -->
+    <section class="p-6">
+      <h2 class="text-2xl font-semibold mb-4 text-pink-600">Cultural Events (03.05.2025)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+       <!--Group Dance-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-pink-50 transition duration-300">
+          <img src="assets/Group Dance.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Group Dance</h3>
+              <p class="text-sm text-gray-600">Team up and light up the stage! Synchronize your steps, bring the vibes, and set the floor ablaze with a group routine that screams unity and talent.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 91</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Duo Dance-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-pink-50 transition duration-300">
+          <img src="assets/Duet dance.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Duo Dance</h3>
+              <p class="text-sm text-gray-600">Double the energy, double the impact! Show your coordination, chemistry, and creativity with a dance partner in a performance that wows the audience.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 91</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Solo Dance-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-pink-50 transition duration-300">
+          <img src="assets/Solo dance.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Solo Dance</h3>
+              <p class="text-sm text-gray-600">Own the stage with your unique style! Whether it’s classical, hip-hop, or freestyle – showcase your passion and energy in a solo performance that leaves the crowd in awe.
+              </p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 91</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Duo Singing-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-pink-50 transition duration-300">
+          <img src="assets/Duo singing.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Duo Singing</h3>
+              <p class="text-sm text-gray-600">A perfect harmony of voices. Perform a duet with a partner, blend your vocals, and deliver a melody that leaves the audience humming for more.
+              </p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 91</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Solo Singing-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-pink-50 transition duration-300">
+          <img src="assets/Singing Competion.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Solo Singing</h3>
+              <p class="text-sm text-gray-600">Sing your heart out! Whether you're into soulful tunes, classical ragas, or powerful pop – step into the spotlight and let your voice do the magic.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 91</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Standup comedy-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-pink-50 transition duration-300">
+          <img src="assets/Standup comedy.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">StandUp Comedy</h3>
+              <p class="text-sm text-gray-600">Get ready to crack up the crowd! Bring your wit, punchlines, and stage presence for an unforgettable laughter riot.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 91</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Fashion show-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-pink-50 transition duration-300">
+          <img src="assets/Fashion show.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Fashion Show</h3>
+              <p class="text-sm text-gray-600">Elegance, attitude, and expression – walk the runway and redefine style. Show us your fashion statement!
+              </p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 91</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Photography-->
+        <div class="flex bg-white p-4 rounded-xl shadow-md hover:bg-pink-50 transition duration-300">
+          <img src="assets/Photography.avif" alt="Event" class="w-32 h-32 object-cover rounded-lg">
+          <div class="ml-4 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold">Photography</h3>
+              <p class="text-sm text-gray-600">Capture moments, emotions, or the essence of the fest. Submit your best shots and let your lens tell a story worth remembering.</p>
+            </div>
+            <div class="mt-2">
+              <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white py-1 px-3 rounded text-sm">Register Now</a>
+              <p class="text-xs mt-1">Registrations: 91</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <!-- Logo and About -->
+      <div class="footer-about">
+        <div class="footer-logo-text">
+          <img src="assets/JBREC LOGO.jpg" alt="College Logo" class="footer-logo">
+          <div>
+            <h3>Joginpally B.R. Engineering College</h3>
+            <p>Empowering students through academic excellence and holistic development.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><div class="dropdown">
+            <a href="#">Events ▾</a>
+            <div class="dropdown-content">
+              <a href="ongoing-events.html">Ongoing</a>
+              <a href="upcoming-events.html">Upcoming</a>
+              <a href="completed-events.html">Completed</a>
+            </div></li>
+          <li><a href="sac.html">SAC</a></li>
+          <li><a href="#clubs">Clubs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media -->
+  <div class="footer-social">
+    <h4>Connect With Us</h4>
+    <div class="space-y-3">
+      <a href="https://www.instagram.com/jbrecofficialsm/" target="_blank" class="flex items-center space-x-2 hover:text-[#E1306C] transition">
+        <img src="assets/insta-logo.png" alt="Instagram" class="w-6 h-6" />
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" class="flex items-center space-x-2 hover:text-[#3b5998] transition">
+        <img src="assets/Facebook_Logo.png" alt="Facebook" class="w-6 h-6" />
+        <span>Facebook</span>
+      </a>
+      <a href="https://twitter.com/" target="_blank" class="flex items-center space-x-2 hover:text-[#1DA1F2] transition">
+        <img src="assets/x-logo.jpg" alt="Twitter" class="w-6 h-6" />
+        <span>Twitter</span>
+      </a>
+    </div>
+  </div>
+  
+  
+  
+    <a href="#top" class="scroll-to-top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  
+  
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy;  built by Vijay Siddharth Guptha | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Fetch Registration Count Script -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('https://script.google.com/macros/s/AKfycbzmFiR7bWtZDtwvyGRgz5I6fxWAnIRC6TqbzeiAzk8h7ZmhWBu8HtLcn8bCGIgY-k7YDA/exec')
+        .then(response => response.json())
+        .then(data => {
+          console.log("Fetched data:", data);
+          document.getElementById('reg-count').textContent = data.length;
+        })
+        .catch(error => {
+          console.error('Error fetching registration data:', error);
+          document.getElementById('reg-count').textContent = 'Error';
+        });
+    });
+
+    function toggleEventSections() {
+      const section = document.getElementById('event-sections');
+      section.classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | College Events</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- HEADER -->
+  <header>
+    <div class="top-bar">
+      <img src="assets/JBREC LOGO.jpg" alt="College Logo Left" class="logo" />
+      <div class="college-info">
+        <h1>Joginpally B.R. Engineering College</h1>
+        <p>Accredited by NAAC with A+, Recognized under 2(f) of UGC Act.1956, ISO 9001:2015 Certified,</p>
+        <p>Yenkapally (V), Moinabad (M), P.O. Himayat Nagar, R.R. District, Hyderabad – 500 075.</p>
+      </div>
+      <img src="assets/JBR LOGO.jpg" alt="College Logo Right" class="logo" />
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <div class="dropdown">
+        <a href="#">SAC ▾</a>
+        <div class="dropdown-content">
+          <a href="sac.html">About SAC</a>
+          <a href="team.html">SAC Team</a>
+        </div>
+      </div>
+      <a href="Gallery.html">Gallery</a>
+      <div class="dropdown">
+        <a href="#">Events ▾</a>
+        <div class="dropdown-content">
+          <a href="ongoing-events.html">Ongoing</a>
+          <a href="upcoming-events.html">Upcoming</a>
+          <a href="completed-events.html">Completed</a>
+        </div>
+      </div>
+      <a href="contact.html" class="active">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-100 to-blue-50 py-16">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-blue-700">Get in Touch</h2>
+      <p class="text-gray-600 mt-2">We’d love to hear from you! Whether it's a question or suggestion, feel free to reach out.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Map -->
+  <section class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+    <!-- Google Form Embed -->
+<div class="bg-white shadow-lg rounded-xl p-8">
+    <h3 class="text-2xl font-semibold text-blue-600 mb-6">Contact Form</h3>
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdROPWY5EgQjZRlVSWousilhv6ZJW6nKGfzT6Bv_MCye5-evQ/viewform?embedded=true" 
+      width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">
+      Loading…
+    </iframe>
+  </div>
+  
+
+    <!-- Map + Info -->
+    <div class="space-y-6">
+      <div class="w-full h-80 overflow-hidden rounded-xl shadow-lg">
+        <iframe
+          src="https://www.google.com/maps?q=87JX%2BGC%20Hyderabad%2C%20Telangana&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h4 class="text-xl font-bold text-blue-700 mb-2">College Address</h4>
+        <p>Joginpally B.R. Engineering College<br>
+        Yenkapally, Moinabad, Hyderabad – 500075<br>
+        Telangana, India</p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=87JX%2BGC%20Hyderabad%2C%20Telangana" target="_blank"
+          class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md shadow transition duration-200">
+          📍 Get Directions
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <div class="footer-logo-text">
+          <img src="assets/JBREC LOGO.jpg" alt="College Logo" class="footer-logo">
+          <div>
+            <h3>Joginpally B.R. Engineering College</h3>
+            <p>Empowering students through academic excellence and holistic development.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about" class="text-sm text-gray-600 hover:text-blue-500">About Us</a></li>
+          <li><a href="sac.html">SAC</a></li>
+          <li><a href="team.html">SAC Team</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-social">
+        <h4>Connect With Us</h4>
+        <div class="space-y-3">
+          <a href="#" target="_blank" class="flex items-center space-x-2 hover:text-[#E1306C]">
+            <img src="assets/insta-logo.png" alt="Instagram" class="w-6 h-6" />
+            <span>Instagram</span>
+          </a>
+          <a href="#" target="_blank" class="flex items-center space-x-2 hover:text-[#3b5998]">
+            <img src="assets/Facebook_Logo.png" alt="Facebook" class="w-6 h-6" />
+            <span>Facebook</span>
+          </a>
+          <a href="#" target="_blank" class="flex items-center space-x-2 hover:text-[#1DA1F2]">
+            <img src="assets/x-logo.jpg" alt="Twitter" class="w-6 h-6" />
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Built by Vijay Siddharth Guptha | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
